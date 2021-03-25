@@ -1,0 +1,36 @@
+{
+  "name": "ledevivan/member_space",
+  "description": "Application php OpenSource de gestion d'utilisateur",
+  "keywords": [
+    "study",
+    "openSource"
+  ],
+  "authors": [
+    {
+      "name": "Ledevivan",
+      "email": "ledevivan@gmail.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "core/functions/app_functions.php",
+      "core/functions/class_helpers_functions.php",
+      "core/functions/routes_functions.php",
+      "core/functions/sessions_functions.php",
+      "core/functions/views_functions.php",
+      "app/middlewares/auth.php"
+    ],
+    "psr-4": {
+      "App\\": "app/",
+      "Application\\": "core/"
+    }
+  },
+  "require": {
+    "psr/http-message": "^1.0",
+    "guzzlehttp/psr7": "^1.6",
+    "http-interop/response-sender": "^1.0",
+    "http-interop/http-middleware": "^0.5.0",
+    "swiftmailer/swiftmailer": "^6.0",
+    "ext-pdo": "*"
+  }
+}
