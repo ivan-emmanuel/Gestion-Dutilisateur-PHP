@@ -17,7 +17,9 @@
                         <?php  text_field('login','Login')  ?>
                         <?php  password_field('password','Mot de passe')  ?>
                         <button type="submit" class="btn btn-dark col-lg-12">Connexion</button>
+                        <?php if (app_config('ENABLE_MAILS')): ?>
                         <a href="<?= path_for('login.reset') ?>">Mot de passe oublié</a>
+                        <?php endif; ?>
                     </div>
                 </div>
 
